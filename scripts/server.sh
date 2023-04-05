@@ -26,7 +26,7 @@ mysql -e "grant all privileges on glpi_db.* to 'glpi_db'@'localhost' with grant 
 #systemctl restart mariadb
 
 # -- Download do GLPI e extração dos arquivos --
-wget -O- https://github.com/glpi-project/glpi/releases/download/10.0.6/glpi-10.0.6.tgz | tar -zxv -C /var/www/html/
+wget -O- https://github.com/glpi-project/glpi/releases/download/10.0.7/glpi-10.0.7.tgz | tar -zxv -C /var/www/html/
 
 # -- Configuração de acesso e segurança --
 chown -vRf www-data:www-data /var/www/html/glpi
